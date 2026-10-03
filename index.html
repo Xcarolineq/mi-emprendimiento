@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora — Fotografía Felina de Autor & Boutique de Arte</title>
+    <meta name="description"
+        content="Estudio boutique de fotografía artística de gatos y tienda de láminas Fine Art inspirada en la gata gris Nora. Sesiones respetuosas Fear-Free en estudio y a domicilio.">
+    <meta name="theme-color" content="#C86D51">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Nora — Fotografía Felina & Tienda de Arte">
+    <meta property="og:description"
+        content="Fotografía artística para gatos con enfoque Fear-Free. Cuadros Fine Art, photobooks y sesiones inolvidables inspiradas en Nora.">
+    <meta property="og:image" content="assets/img/nora-hero.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <aside class="top-bar">
+        <div class="container top-bar-content">
+            <span>🐾 Envíos a todo Chile en tubos rígidos de protección • Sesiones Fear-Free con paciencia y amor</span>
+            <span class="top-bar-badge">Usa el código <strong>NORA10</strong> para 10% OFF en láminas</span>
+        </div>
+    </aside>
+
+    <!-- Sticky Glassmorphism Header / Navigation -->
+    <header id="site-header" class="site-header">
+        <div class="container header-container">
+
+            <!-- Brand Logo -->
+            <a href="#inicio" class="brand-logo" id="brand-logo-link">
+                <span class="brand-icon">🐾</span>
+                <div class="brand-text">
+                    <span class="brand-title">Nora</span>
+                    <span class="brand-subtitle">Fotografía Felina</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="nav-desktop" aria-label="Navegación principal">
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="nav-link active" data-nav="inicio">Inicio</a></li>
+                    <li><a href="#tienda" class="nav-link" data-nav="tienda">Tienda de Arte</a></li>
+                    <li><a href="#galeria-nora" class="nav-link" data-nav="galeria-nora">Galería de Nora</a></li>
+                    <li><a href="#blog" class="nav-link" data-nav="blog">Blog Editorial</a></li>
+                    <li><a href="#sobre-nora" class="nav-link" data-nav="sobre-nora">Sobre Nora</a></li>
+                    <li><a href="#contacto" class="nav-link" data-nav="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Cart Trigger Button -->
+                <button id="cart-toggle-btn" class="btn-cart" aria-label="Abrir carrito de compras">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-text">Carrito</span>
+                    <span id="cart-count-badge" class="cart-badge">0</span>
+                </button>
+
+                <!-- CTA Booking Button -->
+                <a href="#reserva" class="btn btn-primary btn-header-cta" id="header-cta-btn">
+                    Agendar Sesión
+                </a>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <button id="mobile-menu-toggle" class="btn-hamburger" aria-label="Abrir menú de navegación"
+                    aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-drawer" class="mobile-drawer">
+            <div class="mobile-drawer-header">
+                <div class="brand-logo">
+                    <span class="brand-icon">🐾</span>
+                    <span class="brand-title">Nora</span>
+                </div>
+                <button id="mobile-drawer-close" class="btn-close" aria-label="Cerrar menú">&times;</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#inicio" class="mobile-link active" data-nav="inicio">🏠 Inicio</a></li>
+                <li><a href="#tienda" class="mobile-link" data-nav="tienda">🖼️ Tienda de Arte</a></li>
+                <li><a href="#galeria-nora" class="mobile-link" data-nav="galeria-nora">📷 Fotos de Nora</a></li>
+                <li><a href="#blog" class="mobile-link" data-nav="blog">📰 Blog Editorial</a></li>
+                <li><a href="#sobre-nora" class="mobile-link" data-nav="sobre-nora">🐱 Conoce a Nora</a></li>
+                <li><a href="#reserva" class="mobile-link" data-nav="reserva">📅 Agendar Sesión</a></li>
+                <li><a href="#faq" class="mobile-link" data-nav="faq">❓ Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" class="mobile-link" data-nav="contacto">✉️ Contacto</a></li>
+            </ul>
+            <div class="mobile-drawer-footer">
+                <p class="mobile-tagline">Fotografía respetuosa y arte de autor para gatos amados.</p>
+                <a href="https://wa.me/56912345678" target="_blank" class="btn btn-whatsapp-full">
+                    <span>💬</span> Chatear por WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SPA CONTENT CONTAINER -->
+    <main id="main-app">
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 1: LANDING PAGE (INICIO)                                             -->
+        <!-- ========================================================================= -->
+        <section id="view-inicio" class="view-section active">
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="badge-tag hero-badge">
+                            <span class="badge-icon">🌿</span> Metodología Fear-Free Certified
+                        </div>
+                        <h1 class="hero-title">El arte íntimo de retratar el alma de tu felino.</h1>
+                        <p class="hero-lead">
+                            Fotografía de autor para gatos con paciencia infinita y luz cálida sin estrés.
+                            Inmortalizamos a tu compañero en impresiones Fine Art de calidad museo y sesiones memorables
+                            en estudio o en tu hogar.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#tienda" class="btn btn-primary btn-lg">Explorar Galería de Arte</a>
+                            <a href="#reserva" class="btn btn-secondary btn-lg">Reservar Sesión sin Estrés</a>
+                        </div>
+                        <div class="hero-trust">
+                            <div class="trust-avatars">
+                                <span class="trust-avatar">🐱</span>
+                                <span class="trust-avatar">🐈‍⬛</span>
+                                <span class="trust-avatar">🐾</span>
+                            </div>
+                            <div class="trust-text">
+                                <strong>Inspirado en la gata gris Nora</strong>
+                                <span>100% libre de flashes invasivos ni prisas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-image-wrapper">
+                            <img src="assets/img/nora-hero.jpg"
+                                alt="Retrato fotográfico real de la gata gris Nora mirando fijamente a la cámara"
+                                class="hero-img">
+                            <div class="hero-card-floating hero-card-1">
+                                <span class="floating-icon">✨</span>
+                                <div>
+                                    <strong>Papel de Algodón 310g</strong>
+                                    <span>Durabilidad de 80+ años</span>
+                                </div>
+                            </div>
+                            <div class="hero-card-floating hero-card-2">
+                                <span class="floating-icon">🤍</span>
+                                <div>
+                                    <strong>Nora la Musa</strong>
+                                    <span>La gata gris rescatada & fundadora</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fear-Free & Value Pillars -->
+            <section class="section pillars-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-badge">Nuestros Pilares</span>
+                        <h2 class="section-title">Por qué somos el estudio favorito de los gatos</h2>
+                        <p class="section-subtitle">Diseñamos una experiencia respetuosa que prioriza el bienestar
+                            emocional de cada felino.</p>
+                    </div>
+
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🕯️</div>
+                            <h3 class="pillar-title">Iluminación Suave & Continua</h3>
+                            <p class="pillar-desc">No usamos flashes estroboscópicos repentinos que asusten a tu gato.
+                                Trabajamos con luz continua cálida difusa de temperatura agradable.</p>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🌿</div>
+                            <h3 class="pillar-title">Terapia Aromática & Feromonas</h3>
+                            <p class="pillar-desc">Ambientamos el espacio con difusores de Feliway, hierba gatera
+                                orgánica y música clásica ambiental para lograr máxima relajación.</p>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon">⏱️</div>
+                            <h3 class="pillar-title">Tiempos Adaptados al Felino</h3>
+                            <p class="pillar-desc">Jamás forzamos una pose. Esperamos el tiempo que el gato necesite
+                                para explorar, olfatear y sentirse en confianza antes del primer disparo.</p>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon">🖼️</div>
+                            <h3 class="pillar-title">Impresión de Museo Fine Art</h3>
+                            <p class="pillar-desc">Tintas minerales pigmentadas sobre papel Hahnemühle de algodón puro
+                                100%, con enmarcados artesanales en maderas nobles locales.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nora's Story Feature -->
+            <section id="sobre-nora" class="section about-nora-section">
+                <div class="container about-grid">
+                    <div class="about-image-col">
+                        <div class="about-image-frame">
+                            <img src="assets/img/nora-cozy.jpg"
+                                alt="Nora descansando plácidamente en las piernas con sus grandes ojos atentos"
+                                class="about-img">
+                            <div class="frame-tag">Musa & Fundadora Honoraria</div>
+                        </div>
+                    </div>
+                    <div class="about-content-col">
+                        <span class="section-badge">La Inspiración Real</span>
+                        <h2 class="section-title">De gata adoptada a musa de fotografía.</h2>
+                        <p class="about-text">
+                            Nora llegó a nuestras vidas en febrero en un día muy caluroso, adoptada a través de Facebook siendo la
+                            <strong>única de su camada en tener un color gris entre 6 hermanos</strong>. Su mirada cautivó mi atención
+                            y su forma de ser hizo que me enamorara de ella al instante.
+                        </p>
+                        <p class="about-text">
+                            Cuando llegó el primer día era diminuta, cabía exactamente en la palma de mi mano. Durante su viaje
+                            maullaba sin entender hacia dónde iba, pero en cuanto llegó a casa se sintió como en su propio hogar:
+                            se recorrió cada rincón como si siempre hubiera sido su dueña.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Amor y Paciencia</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">310g</span>
+                                <span class="stat-label">Papel Algodón Museo</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">5 ★</span>
+                                <span class="stat-label">Valoración Tutores</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="#tienda" class="btn btn-primary">Ver Colección de Arte de Nora</a>
+                            <a href="#galeria-nora" class="btn btn-secondary">Ver Galería de Fotos Reales</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Real Photo Gallery of Nora: From Kitten to Adult -->
+            <section id="galeria-nora" class="section nora-gallery-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-badge">Archivo Fotográfico</span>
+                        <h2 class="section-title">El Álbum de Nora: De Cachorrita a Reina</h2>
+                        <p class="section-subtitle">Momentos reales que inspiraron nuestra forma de ver y retratar a los gatos.</p>
+                    </div>
+
+                    <div class="nora-photo-grid">
+                        <div class="nora-photo-item photo-large">
+                            <img src="assets/img/nora-hero.jpg" alt="Retrato de primer plano de Nora adulta mirando fijamente">
+                            <div class="photo-caption">
+                                <strong>Nora en Primer Plano</strong>
+                                <span>Ojos ámbar y pelaje gris aterciopelado</span>
+                            </div>
+                        </div>
+                        <div class="nora-photo-item">
+                            <img src="assets/img/nora-fineart.jpg" alt="Nora curiosa con su patita extendida">
+                            <div class="photo-caption">
+                                <strong>La Patita Curiosa</strong>
+                                <span>Explorando cada rincón de casa</span>
+                            </div>
+                        </div>
+                        <div class="nora-photo-item">
+                            <img src="assets/img/nora-kitten-sleeping.jpg" alt="Nora de cachorrita durmiendo en la almohada como humana">
+                            <div class="photo-caption">
+                                <strong>Siesta en la Almohada</strong>
+                                <span>Durmiendo estirada como un humano</span>
+                            </div>
+                        </div>
+                        <div class="nora-photo-item">
+                            <img src="assets/img/nora-photobook.jpg" alt="Nora bebé en su mantita de estrellas">
+                            <div class="photo-caption">
+                                <strong>Manta de Estrellas</strong>
+                                <span>Sus primeras semanas en casa</span>
+                            </div>
+                        </div>
+                        <div class="nora-photo-item">
+                            <img src="assets/img/nora-kitten-cozy.jpg" alt="Nora bebé acurrucada en la colcha gris">
+                            <div class="photo-caption">
+                                <strong>La Bolita Gris</strong>
+                                <span>Acurrucada en su lugar favorito</span>
+                            </div>
+                        </div>
+                        <div class="nora-photo-item">
+                            <img src="assets/img/nora-adult-sleeping.jpg" alt="Nora adulta durmiendo profundamente">
+                            <div class="photo-caption">
+                                <strong>Paz Absoluta</strong>
+                                <span>El descanso de quien se sabe amada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Store Products Preview -->
+            <section class="section featured-products-section">
+                <div class="container">
+                    <div class="section-header-flex">
+                        <div>
+                            <span class="section-badge">Galería Destacada</span>
+                            <h2 class="section-title">Obras de Arte & Recuerdos de Colección</h2>
+                            <p class="section-subtitle">Piezas de autor impresas en papel algodón de 310g y enmarcadas a mano.</p>
+                        </div>
+                        <a href="#tienda" class="btn btn-secondary btn-desktop-only">Ver Catálogo Completo ➔</a>
+                    </div>
+
+                    <div id="landing-featured-grid" class="products-grid">
+                        <!-- Rendered by app.js with real Nora photos -->
+                    </div>
+
+                    <div class="text-center mobile-only-cta">
+                        <a href="#tienda" class="btn btn-secondary">Ver Catálogo Completo ➔</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Packages / Photography Sessions -->
+            <section class="section sessions-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-badge">Experiencias Fotográficas</span>
+                        <h2 class="section-title">Sesiones Diseñadas para su Tranquilidad</h2>
+                        <p class="section-subtitle">Elige el formato ideal para la personalidad de tu felino.</p>
+                    </div>
+
+                    <div class="sessions-grid">
+
+                        <!-- Session 1: Estudio -->
+                        <div class="session-card">
+                            <div class="session-badge">Ideal para gatos curiosos</div>
+                            <h3 class="session-title">Sesión "Retrato Esencial" (Estudio)</h3>
+                            <div class="session-price">$65.000 <span class="currency">CLP</span></div>
+                            <p class="session-desc">Una experiencia relajada en nuestro estudio boutique climatizado y ambientado con aromaterapia.</p>
+                            <ul class="session-features">
+                                <li>✓ 60 a 90 minutos de sesión respetando pausas</li>
+                                <li>✓ 15 fotografías digitales editadas en alta resolución</li>
+                                <li>✓ 1 Lámina Fine Art A4 (21x30 cm) en papel algodón de regalo</li>
+                                <li>✓ Asesoría previa de preparación sin estrés</li>
+                                <li>✓ Galería web privada para selección de tomas</li>
+                            </ul>
+                            <button class="btn btn-secondary btn-full select-session-btn"
+                                data-session="Retrato Esencial (Estudio)">
+                                Reservar en Estudio
+                            </button>
+                        </div>
+
+                        <!-- Session 2: Domicilio (Featured) -->
+                        <div class="session-card session-featured">
+                            <div class="session-badge session-badge-hot">⭐ Más Recomendada para Gatos Tímidos</div>
+                            <h3 class="session-title">Sesión "Hogar Dulce Hogar" (A Domicilio)</h3>
+                            <div class="session-price">$95.000 <span class="currency">CLP</span></div>
+                            <p class="session-desc">Llevamos nuestro equipo de luz continua suave a la comodidad y seguridad de tu propio hogar.</p>
+                            <ul class="session-features">
+                                <li>✓ 2 horas en el entorno natural de tu gato</li>
+                                <li>✓ 25 fotografías digitales editadas en máxima calidad</li>
+                                <li>✓ 1 Cuadro Enmarcado 30x40 cm en madera noble listo para colgar</li>
+                                <li>✓ Fotos individuales + retratos familiares con el tutor</li>
+                                <li>✓ Sesión sin traslado ni jaulas de transporte</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full select-session-btn"
+                                data-session="Hogar Dulce Hogar (Domicilio)">
+                                Reservar a Domicilio
+                            </button>
+                        </div>
+
+                        <!-- Session 3: Pack Memoria & Photobook -->
+                        <div class="session-card">
+                            <div class="session-badge">Experiencia de Lujo</div>
+                            <h3 class="session-title">Pack "Legado & Photobook"</h3>
+                            <div class="session-price">$145.000 <span class="currency">CLP</span></div>
+                            <p class="session-desc">La experiencia más completa para crear una memoria atemporal de tu compañero de vida.</p>
+                            <ul class="session-features">
+                                <li>✓ Sesión combinada (Hogar o Estudio) de hasta 3 horas</li>
+                                <li>✓ Todas las fotos digitales editadas (+40 tomas)</li>
+                                <li>✓ 1 Photobook de lujo tapa dura de lino (100 págs)</li>
+                                <li>✓ Set de 3 láminas Fine Art enmarcadas</li>
+                                <li>✓ Caja de madera grabada conmemorativa</li>
+                            </ul>
+                            <button class="btn btn-secondary btn-full select-session-btn"
+                                data-session="Pack Legado & Photobook">
+                                Reservar Pack Legado
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials / Social Proof -->
+            <section class="section testimonials-section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <span class="section-badge">Testimonios Reales</span>
+                        <h2 class="section-title">Lo que dicen los tutores de nuestros modelos</h2>
+                        <p class="section-subtitle">Historias de amor y serenidad capturadas en nuestro lente.</p>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-quote">
+                                "Mi gata Olivia es extremadamente asustadiza y pensé que sería imposible hacerle fotos. Caro tuvo una paciencia mágica: esperó 40 minutos sentada en el suelo mientras Olivia tomaba confianza. El cuadro que recibí es una obra de arte que todos elogian."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/persona-avatar.jpg" alt="Valentina Ramos" class="author-img">
+                                <div>
+                                    <strong>Valentina Ramos</strong>
+                                    <span>Tutora de Olivia & Simón • Diseñadora</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-quote">
+                                "Compré el photobook de la colección Nora y una sesión para mi gato Milo. La calidad del papel de algodón y los marcos de roble es impresionante, nada que ver con las impresiones comerciales. Es el mejor homenaje que pudimos regalarle."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-initials">DM</div>
+                                <div>
+                                    <strong>Diego Morales</strong>
+                                    <span>Tutor de Milo • Arquitecto</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-quote">
+                                "El método Fear-Free se nota desde el primer minuto. Cero flashes molestos, todo con juguetes y premios. Fue una tarde hermosa y los retratos parecen sacados de una revista de diseño europea."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-initials">CL</div>
+                                <div>
+                                    <strong>Camila Larraín</strong>
+                                    <span>Tutora de Tokio & Mochi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking / Lead Capture Form Section -->
+            <section id="reserva" class="section booking-section">
+                <div class="container booking-container">
+                    <div class="booking-grid">
+
+                        <div class="booking-info">
+                            <span class="section-badge">Agenda tu Cita</span>
+                            <h2 class="booking-title">Cuéntanos sobre tu gato y planifiquemos su sesión soñada</h2>
+                            <p class="booking-desc">
+                                Completa el formulario para verificar disponibilidad de fechas. Nos pondremos en contacto contigo en menos de 24 horas hábiles para coordinar detalles y enviarte la guía de preparación.
+                            </p>
+
+                            <div class="booking-perks">
+                                <div class="perk-item">
+                                    <span class="perk-icon">📅</span>
+                                    <div>
+                                        <strong>Fechas Flexibles</strong>
+                                        <span>Reprogramación sin costo si tu gato está indispuesto</span>
+                                    </div>
+                                </div>
+                                <div class="perk-item">
+                                    <span class="perk-icon">🎁</span>
+                                    <div>
+                                        <strong>Guía de Preparación Gratuita</strong>
+                                        <span>PDF descargable con consejos para el día de la sesión</span>
+                                    </div>
+                                </div>
+                                <div class="perk-item">
+                                    <span class="perk-icon">💬</span>
+                                    <div>
+                                        <strong>Atención Directa por WhatsApp</strong>
+                                        <span>Coordinación ágil y personalizada</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-form-wrapper">
+                            <form id="booking-form" class="booking-form">
+                                <h3 class="form-title">Formulario de Reserva & Cotización</h3>
+
+                                <div class="form-group">
+                                    <label for="book-name" class="form-label">Tu Nombre y Apellido *</label>
+                                    <input type="text" id="book-name" class="form-input" placeholder="Ej. Valentina Ramos" required>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="book-email" class="form-label">Correo Electrónico *</label>
+                                        <input type="email" id="book-email" class="form-input" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="book-phone" class="form-label">Teléfono / WhatsApp *</label>
+                                        <input type="tel" id="book-phone" class="form-input" placeholder="+56 9 1234 5678" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="book-cat-name" class="form-label">Nombre(s) de tu(s) Gato(s) *</label>
+                                        <input type="text" id="book-cat-name" class="form-input" placeholder="Ej. Simón y Olivia" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="book-service" class="form-label">Tipo de Experiencia *</label>
+                                        <select id="book-service" class="form-select" required>
+                                            <option value="Sesión Hogar Dulce Hogar (Domicilio)">Sesión a Domicilio ($95.000)</option>
+                                            <option value="Sesión Retrato Esencial (Estudio)">Sesión en Estudio ($65.000)</option>
+                                            <option value="Pack Legado & Photobook">Pack Legado & Photobook ($145.000)</option>
+                                            <option value="Cotización para Cuadros Personalizados">Cuadros y Arte Personalizado</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Custom Personality Selector -->
+                                <div class="form-group">
+                                    <label class="form-label">Temperamento de tu felino (para adaptar el protocolo):</label>
+                                    <div class="temperament-options">
+                                        <label class="temperament-chip">
+                                            <input type="radio" name="cat-temperament" value="Tímido / Asustadizo" checked>
+                                            <span class="chip-label">🙈 Tímido / Asustadizo</span>
+                                        </label>
+                                        <label class="temperament-chip">
+                                            <input type="radio" name="cat-temperament" value="Curioso y Sociable">
+                                            <span class="chip-label">😺 Curioso & Sociable</span>
+                                        </label>
+                                        <label class="temperament-chip">
+                                            <input type="radio" name="cat-temperament" value="Sénior / Tranquilo">
+                                            <span class="chip-label">🧶 Sénior / Tranquilo</span>
+                                        </label>
+                                        <label class="temperament-chip">
+                                            <input type="radio" name="cat-temperament" value="Enérgico / Juguetón">
+                                            <span class="chip-label">⚡ Enérgico / Juguetón</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="book-date" class="form-label">Fecha tentativa preferida</label>
+                                    <input type="date" id="book-date" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="book-notes" class="form-label">Cuéntanos algún detalle o manía de tu gato</label>
+                                    <textarea id="book-notes" class="form-textarea" rows="3" placeholder="Ej. Le gusta que lo cepillen, le asustan los ruidos fuertes..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full btn-lg" id="submit-booking-btn">
+                                    Enviar Solicitud de Reserva 🐾
+                                </button>
+                                <p class="form-disclaimer">Tus datos están 100% protegidos. No enviamos spam.</p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Blog Posts Preview -->
+            <section class="section latest-blog-section">
+                <div class="container">
+                    <div class="section-header-flex">
+                        <div>
+                            <span class="section-badge">Blog & Consejos</span>
+                            <h2 class="section-title">Crónicas Felinas & Consejos de Fotografía</h2>
+                            <p class="section-subtitle">Artículos prácticos sobre comportamiento, luz y decoración.</p>
+                        </div>
+                        <a href="#blog" class="btn btn-secondary btn-desktop-only">Ver Todos los Artículos ➔</a>
+                    </div>
+
+                    <div id="landing-blog-grid" class="blog-grid">
+                        <!-- Rendered by app.js with real Nora photos -->
+                    </div>
+
+                    <div class="text-center mobile-only-cta">
+                        <a href="#blog" class="btn btn-secondary">Ver Todos los Artículos ➔</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 2: TIENDA & GALERÍA DE ARTE (CATÁLOGO COMPLETO)                      -->
+        <!-- ========================================================================= -->
+        <section id="view-tienda" class="view-section">
+
+            <div class="page-banner">
+                <div class="container">
+                    <span class="page-breadcrumb"><a href="#inicio">Inicio</a> / Tienda de Arte</span>
+                    <h1 class="page-title">Galería de Arte & Boutique de Nora</h1>
+                    <p class="page-desc">
+                        Impresiones de autor en papel de algodón Hahnemühle de 310g con tintas pigmentadas minerales, marcos de maderas nobles y photobooks de lujo protagonizados por la gata gris Nora.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container store-main-layout">
+
+                <div class="store-toolbar">
+
+                    <div class="category-filters-scroll" id="store-category-filters">
+                        <button class="filter-pill active" data-category="todos">Todos los Productos</button>
+                        <button class="filter-pill" data-category="laminas">Láminas Fine Art</button>
+                        <button class="filter-pill" data-category="cuadros">Cuadros Enmarcados</button>
+                        <button class="filter-pill" data-category="papeleria">Photobooks & Papelería</button>
+                        <button class="filter-pill" data-category="sesiones">Sesiones & Gift Cards</button>
+                    </div>
+
+                    <div class="toolbar-controls">
+                        <div class="search-box">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="store-search-input" class="search-input" placeholder="Buscar por título o formato...">
+                            <button id="search-clear-btn" class="search-clear" style="display:none;">&times;</button>
+                        </div>
+
+                        <select id="store-sort-select" class="sort-select" aria-label="Ordenar productos">
+                            <option value="destacados">Ordenar: Destacados</option>
+                            <option value="precio-menor">Precio: Menor a Mayor</option>
+                            <option value="precio-mayor">Precio: Mayor a Menor</option>
+                            <option value="alfabetico">Alfabético: A - Z</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="store-status-bar">
+                    <span id="store-results-count">Mostrando obras</span>
+                    <div id="active-filter-tags" class="active-tags-container"></div>
+                </div>
+
+                <div id="store-products-grid" class="products-grid">
+                    <!-- Rendered dynamically by app.js -->
+                </div>
+
+                <div class="store-guarantee-banner">
+                    <div class="guarantee-item">
+                        <span class="guarantee-icon">📦</span>
+                        <div>
+                            <strong>Empaque de Galería Seguro</strong>
+                            <p>Tubos reforzados para láminas y cajas acolchadas para cuadros.</p>
+                        </div>
+                    </div>
+                    <div class="guarantee-item">
+                        <span class="guarantee-icon">🌿</span>
+                        <div>
+                            <strong>Materiales 100% Nobles</strong>
+                            <p>Papel algodón libre de ácido y maderas certificadas sustentables.</p>
+                        </div>
+                    </div>
+                    <div class="guarantee-item">
+                        <span class="guarantee-icon">🚚</span>
+                        <div>
+                            <strong>Envío Gratis desde $60.000</strong>
+                            <p>A todas las comunas de la Región Metropolitana.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 3: BLOG EDITORIAL & ARTÍCULOS                                        -->
+        <!-- ========================================================================= -->
+        <section id="view-blog" class="view-section">
+
+            <div class="page-banner">
+                <div class="container">
+                    <span class="page-breadcrumb"><a href="#inicio">Inicio</a> / Blog Editorial</span>
+                    <h1 class="page-title">Crónicas Felinas & Fotografía de Autor</h1>
+                    <p class="page-desc">
+                        Aprende sobre el comportamiento de los gatos, consejos para fotografiarlos con luz natural y conoce la historia de rescate de Nora.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container blog-main-layout">
+
+                <div class="category-filters-scroll" id="blog-category-filters">
+                    <button class="filter-pill active" data-blog-cat="todos">Todos los Artículos</button>
+                    <button class="filter-pill" data-blog-cat="bienestar">Bienestar & Fear-Free</button>
+                    <button class="filter-pill" data-blog-cat="fotografia">Consejos de Fotografía</button>
+                    <button class="filter-pill" data-blog-cat="decoracion">Decoración & Arte</button>
+                    <button class="filter-pill" data-blog-cat="historias">Historias de Nora</button>
+                </div>
+
+                <div id="blog-featured-hero" class="blog-featured-card">
+                    <!-- Rendered by app.js -->
+                </div>
+
+                <div class="section-title-sm">Más Artículos & Guías</div>
+                <div id="blog-articles-grid" class="blog-grid">
+                    <!-- Rendered by app.js -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 4: CONTACTO & FAQ                                                    -->
+        <!-- ========================================================================= -->
+        <section id="view-contacto" class="view-section">
+
+            <div class="page-banner">
+                <div class="container">
+                    <span class="page-breadcrumb"><a href="#inicio">Inicio</a> / Contacto & FAQ</span>
+                    <h1 class="page-title">Hablemos de tu Proyecto o Duda</h1>
+                    <p class="page-desc">Estamos felices de responder tus preguntas sobre sesiones de fotos, envíos de láminas o la historia de Nora.</p>
+                </div>
+            </div>
+
+            <div class="container contact-layout">
+
+                <div class="contact-grid">
+
+                    <div class="contact-info-card">
+                        <h2 class="contact-card-title">Información de Contacto</h2>
+                        <p class="contact-intro">Atendemos consultas y coordinaciones de lunes a sábado.</p>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Estudio Boutique (Previa Cita)</strong>
+                                <p>Barrio Italia, Providencia, Santiago, Chile</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <strong>WhatsApp Directo</strong>
+                                <p><a href="https://wa.me/56912345678" target="_blank" class="contact-link">+56 9 1234 5678</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Correo Electrónico</strong>
+                                <p><a href="mailto:hola@norafotografia.cl" class="contact-link">hola@norafotografia.cl</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📸</span>
+                            <div>
+                                <strong>Instagram</strong>
+                                <p><a href="https://instagram.com" target="_blank" class="contact-link">@nora.fotografiafelina</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-hours">
+                            <strong>Horarios de Sesión:</strong>
+                            <p>Lunes a Sábado: 10:00 - 18:30 hrs.<br>Domingos: Sesiones especiales a domicilio con reserva.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-card" id="faq">
+                        <h2 class="contact-card-title">Preguntas Frecuentes (FAQ)</h2>
+
+                        <div class="faq-accordion">
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué pasa si mi gato es muy asustadizo o tímido?</span>
+                                    <span class="faq-toggle">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>¡Es totalmente normal! Más del 70% de los gatos que fotografiamos son reservados. Nuestra metodología Fear-Free contempla entre 30 y 45 minutos iniciales de adaptación con feromonas y juegos tranquilos. Jamás obligamos a un gato a salir de su escondite si no lo desea.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Hacen sesiones a domicilio fuera de Santiago?</span>
+                                    <span class="faq-toggle">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Sí, realizamos sesiones a domicilio en toda la Región Metropolitana y coordinamos visitas mensuales a la V Región (Valparaíso/Viña del Mar) y VI Región con un recargo de viático accesible.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Cómo se envían los cuadros y láminas Fine Art?</span>
+                                    <span class="faq-toggle">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Las láminas se envuelven en papel de seda libre de ácido y se despachan dentro de tubos de cartón rígido de alto impacto. Los cuadros enmarcados se protegen con esquineros de espuma y cajas selladas de alta densidad.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Puedo comprar una sesión como regalo?</span>
+                                    <span class="faq-toggle">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>¡Por supuesto! Disponemos de Gift Cards digitales personalizadas con dedicatoria y validez de 6 meses para que el agasajado elija su fecha con total comodidad.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- VIEW 5: TÉRMINOS & PRIVACIDAD (PÁGINAS OBLIGATORIAS)                       -->
+        <!-- ========================================================================= -->
+        <section id="view-legales" class="view-section">
+            <div class="page-banner">
+                <div class="container">
+                    <span class="page-breadcrumb"><a href="#inicio">Inicio</a> / Términos & Privacidad</span>
+                    <h1 class="page-title" id="legal-title">Términos del Servicio y Privacidad</h1>
+                </div>
+            </div>
+
+            <div class="container legal-content-wrapper">
+                <div class="legal-card" id="legal-body">
+                    <h3>1. Compromiso de Bienestar Felino</h3>
+                    <p>En Nora Fotografía Felina, el bienestar y la integridad física y emocional del animal prevalecen sobre cualquier toma fotográfica. Si el fotógrafo considera que el gato experimenta un nivel excesivo de estrés, la sesión se pausará o se reprogramará sin costo adicional.</p>
+
+                    <h3>2. Derechos de Autor y Uso de Imágenes</h3>
+                    <p>Las fotografías tomadas durante las sesiones son de autoría artística del estudio. Los tutores reciben una licencia de uso personal no comercial de alta resolución para impresión personal y redes sociales. El estudio podrá exhibir las fotos en su portafolio salvo solicitud expresa contraria del tutor.</p>
+
+                    <h3>3. Despachos y Envíos de Tienda</h3>
+                    <p>Los despachos de láminas se procesan en un plazo de 3 a 5 días hábiles. Los cuadros enmarcados a mano requieren de 7 a 10 días hábiles de fabricación artesanal antes de su despacho seguro.</p>
+
+                    <h3>4. Política de Privacidad</h3>
+                    <p>Tus datos personales (nombre, teléfono, correo y fotos de tus mascotas) son confidenciales y se emplean exclusivamente para la coordinación de servicios y facturación.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL: DETALLE / FICHA DE PRODUCTO INTERACTIVA                            -->
+    <!-- ========================================================================= -->
+    <div id="product-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="modal-card product-modal-card">
+            <button id="product-modal-close" class="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+
+            <div class="product-modal-grid">
+                <div class="product-modal-gallery">
+                    <img id="modal-product-img" src="assets/img/nora-hero.jpg" alt="Producto en detalle" class="product-modal-main-img">
+                    <div class="product-modal-badges" id="modal-product-badge-container">
+                        <span class="badge-tag">Foto Real</span>
+                    </div>
+                </div>
+
+                <div class="product-modal-info">
+                    <span class="product-category-tag" id="modal-product-category">Láminas Fine Art</span>
+                    <h2 class="modal-product-title" id="modal-product-title">Lámina Fine Art: La Mirada de Nora</h2>
+                    <div class="modal-product-price" id="modal-product-price">$18.000 <span class="currency">CLP</span></div>
+
+                    <p class="modal-product-desc" id="modal-product-desc">
+                        Impresión giclée en papel 100% algodón Hahnemühle Photo Rag de 310g con tintas pigmentadas de alta fidelidad.
+                    </p>
+
+                    <!-- Variant: Size -->
+                    <div class="variant-section" id="variant-size-section">
+                        <label class="variant-label">Selecciona el Formato / Tamaño:</label>
+                        <div class="variant-chips-group" id="modal-size-chips">
+                            <button class="variant-chip active" data-size="A4" data-price-add="0">A4 (21x30 cm)</button>
+                            <button class="variant-chip" data-size="A3" data-price-add="10000">A3 (30x42 cm) +$10.000</button>
+                            <button class="variant-chip" data-size="50x70" data-price-add="22000">50x70 cm +$22.000</button>
+                        </div>
+                    </div>
+
+                    <!-- Variant: Frame -->
+                    <div class="variant-section" id="variant-frame-section">
+                        <label class="variant-label">Acabado de Enmarcado:</label>
+                        <div class="variant-chips-group" id="modal-frame-chips">
+                            <button class="variant-chip active" data-frame="Sin Marco" data-price-add="0">Lámina sin marco</button>
+                            <button class="variant-chip" data-frame="Roble Natural" data-price-add="18000">Marco Roble Macizo +$18.000</button>
+                            <button class="variant-chip" data-frame="Negro Satinado" data-price-add="15000">Marco Negro Satinado +$15.000</button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity and Add to Cart Action -->
+                    <div class="modal-actions-row">
+                        <div class="quantity-control">
+                            <button class="qty-btn" id="modal-qty-minus" aria-label="Disminuir cantidad">-</button>
+                            <span id="modal-qty-display" class="qty-number">1</span>
+                            <button class="qty-btn" id="modal-qty-plus" aria-label="Aumentar cantidad">+</button>
+                        </div>
+
+                        <button id="modal-add-to-cart-btn" class="btn btn-primary btn-add-cart-modal">
+                            <span>🛒</span> Añadir al Carrito
+                        </button>
+                    </div>
+
+                    <a id="modal-whatsapp-consult-btn" href="#" target="_blank" class="btn-whatsapp-consult">
+                        💬 Consultar detalles de esta obra por WhatsApp
+                    </a>
+
+                    <div class="product-mini-specs">
+                        <div class="spec-line"><strong>Papel:</strong> 100% Algodón libre de ácido 310g/m²</div>
+                        <div class="spec-line"><strong>Durabilidad:</strong> Superior a 80 años en interiores</div>
+                        <div class="spec-line"><strong>Despacho:</strong> 3 a 5 días hábiles en empaque rígido</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- MODAL: LECTOR DE ARTÍCULO DE BLOG CON COMENTARIOS                         -->
+    <!-- ========================================================================= -->
+    <div id="article-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="modal-card article-modal-card">
+            <button id="article-modal-close" class="modal-close-btn" aria-label="Cerrar artículo">&times;</button>
+
+            <article class="article-reader-content">
+                <div class="article-meta-header">
+                    <span class="badge-tag" id="article-modal-tag">Bienestar & Fear-Free</span>
+                    <span class="article-read-time" id="article-modal-readtime">📖 5 min de lectura</span>
+                </div>
+
+                <h1 class="article-reader-title" id="article-modal-title">Cómo lograr que un gato tímido disfrute una sesión de fotos</h1>
+
+                <div class="article-author-bar">
+                    <span class="author-avatar">🐱</span>
+                    <div>
+                        <strong id="article-modal-author">Por Caro Cromática • Fotógrafa Felina</strong>
+                        <span class="article-date" id="article-modal-date">12 de Octubre, 2026</span>
+                    </div>
+                </div>
+
+                <div class="article-reader-media">
+                    <img id="article-modal-img" src="assets/img/nora-kitten-cozy.jpg" alt="Portada del artículo" class="article-reader-img">
+                </div>
+
+                <div class="article-body-text" id="article-modal-body">
+                    <!-- Populated by app.js -->
+                </div>
+
+                <div class="article-cta-box">
+                    <div class="cta-box-content">
+                        <h3>¿Quieres una sesión respetuosa para tu felino?</h3>
+                        <p>Conoce nuestras sesiones a domicilio y en estudio adaptadas a su personalidad.</p>
+                    </div>
+                    <a href="#reserva" class="btn btn-primary" id="article-cta-action">Ver Disponibilidad</a>
+                </div>
+
+                <div class="article-share-bar">
+                    <span class="share-label">Compartir artículo:</span>
+                    <button id="share-copy-link-btn" class="btn-share-icon" title="Copiar enlace">🔗 Copiar Link</button>
+                    <a id="share-whatsapp-btn" href="#" target="_blank" class="btn-share-icon btn-share-wa">💬 WhatsApp</a>
+                    <a id="share-pinterest-btn" href="https://pinterest.com" target="_blank" class="btn-share-icon">📌 Pinterest</a>
+                </div>
+
+                <section class="comments-section">
+                    <h3 class="comments-title">Comentarios de la Comunidad (<span id="comments-count">2</span>)</h3>
+
+                    <div id="comments-list" class="comments-list">
+                        <!-- Dynamic comments rendered here -->
+                    </div>
+
+                    <form id="new-comment-form" class="new-comment-form">
+                        <h4>Deja tu comentario o pregunta</h4>
+                        <div class="form-row">
+                            <input type="text" id="comment-author-input" class="form-input" placeholder="Tu nombre *" required>
+                            <input type="text" id="comment-cat-input" class="form-input" placeholder="Nombre de tu gato">
+                        </div>
+                        <textarea id="comment-text-input" class="form-textarea" rows="3" placeholder="Escribe tu mensaje o experiencia con tu felino..." required></textarea>
+                        <button type="submit" class="btn btn-primary btn-sm">Publicar Comentario 🐾</button>
+                    </form>
+                </section>
+
+            </article>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- SLIDE-OVER SHOPPING CART DRAWER                                           -->
+    <!-- ========================================================================= -->
+    <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+        <div class="cart-drawer-content">
+
+            <div class="cart-drawer-header">
+                <div class="cart-title-wrap">
+                    <span class="cart-icon-title">🛒</span>
+                    <h3 class="cart-drawer-title">Tu Carrito de Arte Felino</h3>
+                </div>
+                <button id="cart-drawer-close" class="btn-close" aria-label="Cerrar carrito">&times;</button>
+            </div>
+
+            <div class="cart-free-shipping-box">
+                <div class="shipping-progress-text" id="shipping-progress-text">
+                    ¡Agrega $12.000 más para <strong>Envío Gratis en RM</strong>!
+                </div>
+                <div class="shipping-progress-track">
+                    <div class="shipping-progress-fill" id="shipping-progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <div id="cart-items-container" class="cart-items-container">
+                <!-- Rendered by app.js -->
+            </div>
+
+            <div class="cart-drawer-footer">
+
+                <div class="promo-code-row">
+                    <input type="text" id="promo-code-input" class="form-input promo-input" placeholder="Código de descuento (ej. NORA10)">
+                    <button id="apply-promo-btn" class="btn btn-secondary btn-sm">Aplicar</button>
+                </div>
+                <div id="promo-feedback" class="promo-feedback-text"></div>
+
+                <div class="shipping-selector-row">
+                    <label for="shipping-region-select" class="shipping-label">Destino de Envío:</label>
+                    <select id="shipping-region-select" class="form-select shipping-select">
+                        <option value="rm">Región Metropolitana ($4.500)</option>
+                        <option value="regiones">Otras Regiones de Chile ($7.500)</option>
+                        <option value="retiro">Retiro gratis en Estudio (Barrio Italia)</option>
+                    </select>
+                </div>
+
+                <div class="cart-summary-table">
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <strong id="cart-subtotal-display">$0 CLP</strong>
+                    </div>
+                    <div class="summary-line discount-line" id="cart-discount-row" style="display:none;">
+                        <span>Descuento cupón:</span>
+                        <strong id="cart-discount-display">-$0 CLP</strong>
+                    </div>
+                    <div class="summary-line">
+                        <span>Despacho:</span>
+                        <strong id="cart-shipping-display">$4.500 CLP</strong>
+                    </div>
+                    <div class="summary-line summary-total-line">
+                        <span>Total Final:</span>
+                        <strong id="cart-total-display">$4.500 CLP</strong>
+                    </div>
+                </div>
+
+                <button id="cart-checkout-whatsapp-btn" class="btn btn-primary btn-full btn-lg btn-whatsapp-checkout">
+                    <span>💬</span> Finalizar Pedido por WhatsApp
+                </button>
+
+                <p class="cart-security-note">
+                    🔒 Compra protegida • Coordinación directa y segura con la fotógrafa.
+                </p>
+
+            </div>
+
+        </div>
+    </aside>
+    <div id="cart-backdrop" class="cart-backdrop"></div>
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING WHATSAPP BUTTON                                                  -->
+    <!-- ========================================================================= -->
+    <a href="https://wa.me/56912345678?text=Hola%20Nora%20Fotograf%C3%ADa!%20Me%20gustar%C3%ADa%20consultar%20por%20sus%20sesiones%20y%20cuadros"
+        target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+        <span class="whatsapp-tooltip">¿Dudas? ¡Escríbenos!</span>
+    </a>
+
+    <!-- ========================================================================= -->
+    <!-- TOAST NOTIFICATION CONTAINER                                              -->
+    <!-- ========================================================================= -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- ========================================================================= -->
+    <!-- SITE FOOTER                                                               -->
+    <!-- ========================================================================= -->
+    <footer id="site-footer" class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col footer-col-brand">
+                <div class="brand-logo footer-logo">
+                    <span class="brand-icon">🐾</span>
+                    <div class="brand-text">
+                        <span class="brand-title">Nora</span>
+                        <span class="brand-subtitle">Fotografía Felina</span>
+                    </div>
+                </div>
+                <p class="footer-bio">
+                    Estudio de fotografía de autor y boutique de arte felino inspirado en la gata gris Nora. Capturamos el alma de los gatos con paciencia, ternura y técnica Fear-Free.
+                </p>
+                <div class="footer-social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram">📸 Instagram</a>
+                    <a href="https://pinterest.com" target="_blank" class="social-btn" aria-label="Pinterest">📌 Pinterest</a>
+                    <a href="https://wa.me/56912345678" target="_blank" class="social-btn" aria-label="WhatsApp">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#inicio">Inicio / Landing</a></li>
+                    <li><a href="#tienda">Tienda de Arte Fine Art</a></li>
+                    <li><a href="#galeria-nora">Álbum de Fotos de Nora</a></li>
+                    <li><a href="#blog">Blog & Consejos de Gatos</a></li>
+                    <li><a href="#reserva">Agendar Sesión Fotográfica</a></li>
+                    <li><a href="#sobre-nora">La Historia de Nora</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Soporte y Garantías</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#faq">Preguntas Frecuentes (FAQ)</a></li>
+                    <li><a href="#contacto">Contacto & Ubicación</a></li>
+                    <li><a href="#view-legales">Términos y Condiciones</a></li>
+                    <li><a href="#view-legales">Política de Privacidad</a></li>
+                    <li><a href="#faq">Políticas de Despacho y Empaque</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-newsletter">
+                <h4 class="footer-heading">Boletín Fotográfico</h4>
+                <p class="newsletter-desc">Recibe historias de Nora, trucos de fotografía en casa y un <strong>10% de descuento</strong> en tu primera lámina.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="newsletter-input-wrap">
+                        <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Ingresa tu correo..." required>
+                        <button type="submit" class="btn btn-primary btn-newsletter">Unirme</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2026 Nora — Fotografía Felina. Proyecto de Evaluación Parcial 02 para MKA1203 Sitios Web y Landing Pages.</p>
+                <p class="footer-credits">Diseñado con amor por los gatos • Santiago, Chile 🇨🇱</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Application Logic Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
