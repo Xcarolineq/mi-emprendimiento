@@ -2,7 +2,7 @@
 
 > Guía: [Componentes](../evaluacion/guias/fase-2-specs/03-calco-de-componentes.md)
 
-**Tablero de Calco de Componentes en Whimsical:** [https://whimsical.com/nora-fotografia-componentes-calco-M1203K](https://whimsical.com)
+**Tablero de Calco de Componentes en Whimsical:** [https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61](https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61)
 
 ![Calco de Componentes de Referencia](img/nora-fineart.jpg)
 

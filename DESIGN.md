@@ -5,13 +5,18 @@ description: "Design system cálido, editorial y elegante para fotografía artí
 colors:
   primary: "#C86D51"
   primary-hover: "#B35B40"
+  primary-active: "#9E482E"
   on-primary: "#FFFFFF"
   secondary: "#3E2723"
   secondary-hover: "#2C1B18"
+  secondary-active: "#1F1210"
   on-secondary: "#FFFFFF"
   tertiary: "#5E7A68"
   tertiary-hover: "#4E6656"
+  tertiary-active: "#3E5244"
   on-tertiary: "#FFFFFF"
+  accent: "#D49A3D"
+  on-accent: "#3E2723"
   neutral: "#FAF7F2"
   surface: "#FFFFFF"
   surface-variant: "#F3ECE2"
@@ -19,9 +24,8 @@ colors:
   on-surface-variant: "#6B6560"
   disabled: "#DCD7D0"
   on-disabled: "#8C8680"
-  accent: "#D49A3D"
-  on-accent: "#FFFFFF"
   error: "#B3261E"
+  error-bg: "#FDF2F2"
   on-error: "#FFFFFF"
   border: "#E7DFD5"
 typography:
@@ -95,13 +99,39 @@ components:
   button-primary-hover:
     backgroundColor: "{colors.primary-hover}"
     textColor: "{colors.on-primary}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.full}"
+    padding: "12px 28px"
+  button-primary-active:
+    backgroundColor: "{colors.primary-active}"
+    textColor: "{colors.on-primary}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.full}"
+    padding: "12px 28px"
   button-primary-disabled:
     backgroundColor: "{colors.disabled}"
     textColor: "{colors.on-disabled}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.full}"
+    padding: "12px 28px"
   button-secondary:
     backgroundColor: "transparent"
     borderColor: "{colors.secondary}"
     textColor: "{colors.secondary}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.full}"
+    padding: "12px 28px"
+  button-secondary-hover:
+    backgroundColor: "{colors.secondary}"
+    borderColor: "{colors.secondary}"
+    textColor: "{colors.on-secondary}"
+    typography: "{typography.label-md}"
+    rounded: "{rounded.full}"
+    padding: "12px 28px"
+  button-secondary-active:
+    backgroundColor: "{colors.secondary-active}"
+    borderColor: "{colors.secondary-active}"
+    textColor: "{colors.on-secondary}"
     typography: "{typography.label-md}"
     rounded: "{rounded.full}"
     padding: "12px 28px"
@@ -142,8 +172,22 @@ components:
     typography: "{typography.body-md}"
     rounded: "{rounded.md}"
     padding: "12px 16px"
+  input-field-focus:
+    backgroundColor: "{colors.surface}"
+    borderColor: "{colors.primary}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "12px 16px"
+  input-field-error:
+    backgroundColor: "{colors.surface}"
+    borderColor: "{colors.error}"
+    textColor: "{colors.on-surface}"
+    typography: "{typography.body-md}"
+    rounded: "{rounded.md}"
+    padding: "12px 16px"
   message-error:
-    backgroundColor: "#FDF2F2"
+    backgroundColor: "{colors.error-bg}"
     textColor: "{colors.error}"
     rounded: "{rounded.md}"
     padding: "12px 16px"
@@ -161,6 +205,8 @@ components:
 **Nora — Fotografía Felina** es un estudio boutique de fotografía de autor y tienda de arte visual inspirado en **Nora**, una gata gris rescatada que fue la única de su camada en tener ese color. Está diseñado para tutores devotos de gatos, arquitectos, diseñadores de interiores y amantes del arte que desean inmortalizar la esencia de sus mascotas en retratos de galería o decorar sus espacios con láminas Fine Art cálidas y sofisticadas.
 
 La interfaz debe transmitir una sensación **cálida, serena, artística, confiable y respetuosa con los animales**, combinando el rigor editorial de una revista de fotografía contemporánea con la cercanía acogedora de un hogar con gatos.
+
+> **Tablero de referencia en Whimsical (Moodboard, Componentes y Wireframes):** [https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61](https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61)
 
 ---
 
@@ -255,23 +301,51 @@ La profundidad se expresa a través de sombras suaves y difusas de tono cálido,
 ## Components
 
 ### 1. `navbar`
-- Barra de navegación fija (*sticky*) con efecto glassmorphism.
-- Contiene isotipo de huella/cámara, logotipo en *Playfair Display*, enlaces principales con indicador activo, selector de vistas, botón de carrito con insignia numérica reactiva y botón de llamada a la acción "Cotizar Sesión".
+- **Estructura:** Barra de navegación fija (*sticky*) con efecto glassmorphism (`backdrop-filter: blur(12px)`).
+- **Contenido:** Isotipo de huella/cámara, logotipo en *Playfair Display*, enlaces principales con indicador activo (subrayado terracota), selector de vistas, botón de carrito con insignia numérica reactiva y botón de llamada a la acción "Cotizar Sesión".
+- **Reglas:**
+  - Debe permanecer fija en la parte superior durante todo el scroll.
+  - La insignia del carrito solo se muestra si la cantidad de productos es mayor a 0.
+  - En pantallas menores a 768px, los enlaces de texto se ocultan dentro de un cajón lateral táctil (drawer hamburguesa).
 
 ### 2. `hero-section`
-- Presenta el mensaje principal de autor con tipografía `headline-display`, subtítulo explicativo, botones dobles ("Ver Galería y Tienda" / "Agendar Sesión sin Estrés"), sello de garantía *Fear-Free Photography* y retrato protagónico de Nora.
+- **Estructura:** Banner principal con disposición modular (texto editorial a la izquierda, fotografía protagónica de la gata Nora a la derecha en desktop; apilado vertical en mobile).
+- **Contenido:** Título principal en `headline-display`, bajada explicativa en `body-lg`, botones dobles (`button-primary` para "Ver Colección de Arte" y `button-secondary` para "Conocer Sesiones Fear-Free"), sello de garantía *Fear-Free Photography* (`tag-badge`) y retrato de estudio de alta resolución.
+- **Reglas:**
+  - El título H1 no debe superar las 3 líneas en desktop ni 4 líneas en mobile.
+  - Los botones de llamada a la acción deben tener un espaciado horizontal de al menos 16px entre sí.
 
 ### 3. `card-product`
-- Tarjeta de catálogo con fotografía de alta fidelidad, badge de categoría/acabado, título en `headline-sm`, selector interactivo de formato/tamaño, precio visible en pesos chilenos (CLP) y botón "Añadir al carrito" o "Ver detalle".
+- **Estructura:** Tarjeta de catálogo contenida con fondo `surface`, borde cálido sutil `border` y esquinas redondeadas `rounded.lg` (16px).
+- **Contenido:** Fotografía de alta fidelidad con proporción de aspecto 4:3, insignia de categoría/acabado (`tag-badge` o `tag-offer`), título de producto en `headline-sm`, selector interactivo de formato o acabado, precio visible en pesos chilenos (`$XX.XXX CLP`) y botón de conversión `button-primary`.
+- **Reglas:**
+  - El precio siempre debe ser visible y formateado en moneda local chilena (CLP), sin requerir interacción previa.
+  - El título de la obra ocupa un máximo de 2 líneas; si el texto excede ese espacio, se trunca con elipsis (`...`).
+  - Al hacer hover, la tarjeta eleva su sombra a Nivel 1 (`box-shadow: 0 10px 25px -5px rgba(62, 39, 35, 0.08)`).
+  - Si no hay stock disponible, el botón pasa automáticamente a estado `button-primary-disabled`.
 
 ### 4. `card-article`
-- Tarjeta editorial con imagen de portada, badge temático (e.g. *Comportamiento Felino*, *Guías de Decoración*), tiempo estimado de lectura, extracto y enlace interactivo a la lectura completa con comentarios.
+- **Estructura:** Tarjeta editorial para el blog con contenedor de superficie blanco puro y elevación sutil.
+- **Contenido:** Imagen de cabecera en proporción panorámica 16:9, etiqueta de categoría en verde salvia (`#5E7A68`), metadatos de tiempo estimado de lectura y fecha, título en `headline-md`, extracto sintético en `body-sm` y enlace interactivo a la lectura completa con flecha.
+- **Reglas:**
+  - La imagen debe incluir atributo `alt` detallado describiendo la escena y la postura felina.
+  - El extracto no debe superar las 3 líneas de texto.
 
 ### 5. `cart-drawer`
-- Cajón lateral deslizante que lista los productos seleccionados, ajuste de cantidades (+ / -), cálculo de subtotal, estimador de envío dinámico y botón de checkout con derivación instantánea a WhatsApp con mensaje estructurado.
+- **Estructura:** Cajón lateral deslizante sobrepuesto con backdrop semitransparente oscuro (`background: rgba(31, 30, 29, 0.5)`).
+- **Contenido:** Cabecera con contador de ítems y botón de cierre [X], lista scrolleable de productos agregados (con miniatura, variante seleccionada, controles `[-]` `[qty]` `[+]` y botón eliminar), selector desplegable de región para cálculo de despacho, input de cupón de descuento, desglose de subtotal/envío/total y botón principal `button-primary` "Finalizar Pedido vía WhatsApp 💬".
+- **Reglas:**
+  - Al abrir el cajón se bloquea el scroll del fondo del documento (`overflow: hidden` en body).
+  - El total se recalcula de forma reactiva ante cualquier cambio de cantidad o región.
+  - El botón de WhatsApp genera una URL `wa.me` preformateada y codificada con `encodeURIComponent`.
 
 ### 6. `lead-booking-form`
-- Formulario de captura y reserva de sesión fotográfica con selección de tipo de mascota, temperamento del gato (tímido, curioso, juguetón), fecha estimada y observaciones.
+- **Estructura:** Formulario interactivo de reserva y cotización estructurado en tarjeta amplia con fondo `surface`.
+- **Contenido:** Campos de entrada `input-field` (nombre del tutor, correo electrónico, teléfono móvil, tipo de sesión, selector de temperamento del gato mediante opciones pill: "Curioso / Tímido / Enérgico", fecha estimada y observaciones particulares).
+- **Reglas:**
+  - Todos los campos obligatorios deben tener validación en tiempo real; los campos con error adoptan el token `input-field-error` con borde `#B3261E`.
+  - El selector de temperamento felino es obligatorio para garantizar la metodología *Fear-Free*.
+  - Al enviar con éxito, muestra una alerta tipo toast con fondo verde salvia y texto de confirmación sin recargar la página.
 
 ---
 

@@ -6,7 +6,7 @@ La spec de diseño tiene dos partes:
 1. **[`DESIGN.md`](../DESIGN.md)** (en la raíz del repositorio): Design system con tokens y reglas que Google Stitch importa directamente.
 2. **Este documento:** Las 6 pantallas del sitio escritas como prompts detallados y listos para generar en Google Stitch (versiones Desktop y Mobile), con textos y datos reales del negocio.
 
-**Wireframes de baja fidelidad en Whimsical:** [https://whimsical.com/nora-fotografia-wireframes-M1203K](https://whimsical.com)
+**Wireframes de baja fidelidad en Whimsical:** [https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61](https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61)
 
 ![Wireframes de las 6 Pantallas](img/nora-photobook.jpg)
 

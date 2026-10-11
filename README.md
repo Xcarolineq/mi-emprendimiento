@@ -26,6 +26,7 @@ Toda la documentación técnica y de diseño del proyecto se encuentra organizad
 - [x] [05-arquitectura.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/docs/05-arquitectura.md) — Mapa de sitio, 2 user flows detallados y taxonomía de categorías.
 
 ### Fase 2: Construcción de Specs
+- [x] [Tablero Whimsical Oficial](https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61) — Moodboard, calco de componentes UI y wireframes de las 6 pantallas.
 - [x] [DESIGN.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/DESIGN.md) — Design System completo en formato estándar con tokens, componentes y reglas.
 - [x] [06-moodboard.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/docs/06-moodboard.md) — Moodboard conceptual, palabras clave y universo visual.
 - [x] [07-componentes.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/docs/07-componentes.md) — Calco de componentes UI y justificación UX.

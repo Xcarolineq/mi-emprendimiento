@@ -2,7 +2,7 @@
 
 > Guía: [Moodboard](../evaluacion/guias/fase-2-specs/02-moodboard.md)
 
-**Tablero conceptual en Whimsical:** [https://whimsical.com/nora-fotografia-felina-moodboard-M1203K](https://whimsical.com)
+**Tablero conceptual en Whimsical:** [https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61](https://whimsical.com/caroline6/ev-2-12-10-2026-RxoBc4RbXSZU6zmyAwKh61)
 
 ![Universo Visual y Sensaciones — Nora Fotografía](img/nora-cozy.jpg)
 
