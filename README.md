@@ -35,6 +35,7 @@ Toda la documentación técnica y de diseño del proyecto se encuentra organizad
 - [x] [10-spec-desarrollo.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/docs/10-spec-desarrollo.md) — Especificación de desarrollo web, arquitectura CSS, variables y criterios de aceptación.
 
 ### Fase 3: Prototipo y Aseguramiento de Calidad (QA)
+- [x] [Proyecto Oficial en Google Stitch](https://stitch.google.com/projects/nora-fotografia-felina-2026) — Prototipo referencial de las 6 pantallas (Desktop y Mobile) con `DESIGN.md` importado.
 - [x] [11-qa.md](file:///d:/Caro_Trabajos/Mi%20emprendimiento/docs/11-qa.md) — Matriz de verificación Spec vs. Prototipo, recorrido de User Flows y coherencia global.
 
 ---
