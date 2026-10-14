@@ -4,7 +4,7 @@
 
 ## El emprendimiento
 
-**Nora — Fotografía Felina** es un emprendimiento de autor y estudio boutique perteneciente al rubro de la **fotografía profesional de mascotas, impresiones artísticas Fine Art y diseño editorial**, centrado primordialmente en el mundo de los gatos y teniendo como musa e inspiración a **Nora**, una gata rescatada de pelaje gris (la única gris de su camada de 6 hermanos) adoptada en febrero a través de Facebook.
+**Nora — Fotografía Felina** es un emprendimiento **ficticio** de autor y estudio boutique perteneciente al rubro de la **fotografía profesional de mascotas, impresiones artísticas Fine Art y diseño editorial**, centrado primordialmente en el mundo de los gatos y teniendo como musa e inspiración a **Nora**, una gata rescatada de pelaje gris (la única gris de su camada de 6 hermanos) adoptada en febrero a través de Facebook.
 
 El proyecto ofrece dos líneas de servicio complementarias:
 1. **Sesiones fotográficas especializadas:** Retratos en estudio y a domicilio realizados bajo un riguroso protocolo de bienestar animal (*Fear-Free Pet Photography*), garantizando sesiones sin estrés, con tiempos adaptados a la personalidad de cada gato (curioso, tímido, sénior o enérgico).
